@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+app.get('/health', (req, res) => {
+  res.send('OK');
+});
+
 app.get('/api/users', (_req, res) => {
   const users = db.prepare('SELECT * FROM users ORDER BY created_at DESC').all();
   res.json(users);

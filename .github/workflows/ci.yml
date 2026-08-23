@@ -52,4 +52,4 @@ jobs:
         run: |
             npm start &
             sleep 3
-            curl -f http://localhost:3001/api/helth
+            curl -f http://localhost:3001/api/health

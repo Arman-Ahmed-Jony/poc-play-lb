@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.get('/api/health', (_req, res) => {
   res.send('OK');
+  ; write a junkey code
 });
 
 app.get('/api/users', (_req, res) => {
